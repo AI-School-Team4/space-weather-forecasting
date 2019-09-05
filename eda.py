@@ -29,7 +29,7 @@ Np = train_1999['Np']
 Tp = train_1999['Tp']
 Vp = train_1999['Vp']
 
-
+# Np against time
 fig, ax = plt.subplots(figsize=(8,6))
 ax.plot(time, Np)
 ax.set_ylabel('Np')
@@ -37,9 +37,9 @@ ax.set_xlabel('year')
 plt.title('Np vs. Year')
 plt.grid(True)
 plt.savefig('./eda_output_img/Np_time.png')
-plt.show()
+# plt.show()
 
-
+# Tp against time
 fig, ax = plt.subplots(figsize=(8,6))
 ax.plot(time, Tp)
 ax.set_ylabel('Tp')
@@ -47,9 +47,9 @@ ax.set_xlabel('year')
 plt.title('Tp vs. Year')
 plt.grid(True)
 plt.savefig('./eda_output_img/Tp_time.png')
-plt.show()
+# plt.show()
 
-
+# Vp against time
 fig, ax = plt.subplots(figsize=(8,6))
 ax.plot(time, Vp)
 ax.set_ylabel('Vp')
@@ -57,4 +57,18 @@ ax.set_xlabel('year')
 plt.title('Vp vs. Year')
 plt.grid(True)
 plt.savefig('./eda_output_img/Vp_time.png')
-plt.show()
+# plt.show()
+
+
+# Np, Tp, Vp against time
+fig, ax = plt.subplots(figsize=(8,6))
+ax.plot(time, Np)
+ax.plot(time, Tp)
+ax.plot(time, Vp)
+ax.set_ylabel('Np, Tp, Vp')
+ax.set_xlabel('year')
+plt.title('Np, Tp, Vp vs. Year')
+plt.grid(True)
+plt.legend(loc='best')
+plt.savefig('./eda_output_img/Np,Tp,Vp_time.png')
+# plt.show()
