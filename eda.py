@@ -34,7 +34,7 @@ fig, ax = plt.subplots(figsize=(8,6))
 ax.plot(time, Np)
 ax.set_ylabel('Np')
 ax.set_xlabel('year')
-plt.grid(True)
+plt.grid()
 plt.show()
 
 
