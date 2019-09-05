@@ -59,6 +59,17 @@ plt.grid(True)
 plt.savefig('./eda_output_img/Vp_time.png')
 # plt.show()
 
+# Np, Vp against time
+fig, ax = plt.subplots(figsize=(8,6))
+ax.plot(time, Np)
+ax.plot(time, Vp)
+ax.set_ylabel('Np, Vp')
+ax.set_xlabel('year')
+plt.title('Np, Vp vs. Year')
+plt.grid(True)
+plt.legend(loc='best')
+plt.savefig('./eda_output_img/Np,Vp_time.png')
+# plt.show()
 
 # Np, Tp, Vp against time
 fig, ax = plt.subplots(figsize=(8,6))
